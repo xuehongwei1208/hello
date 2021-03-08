@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>......</title>
+    <!--添加样式  -->
+    <style >
+      *{
+        margin:0 auto;
+      }
+      /*步骤7：添加id样式*/
+      #msgboard{
+        width:300px;
+        height:100px;
+        background-color: aquamarine;
+        border :1px solid #DEB887;
+      }
+      /*步骤5：添加类样式*/
+      .btn{
+        /*背景颜色*/
+        background-color: burlywood;
+        /*边界*/
+        border: 0.2px solid #DEB887;
+        /*padding: 8px 30px 8px 30px;*/
+        /*内边距：上    右      下     左*/
+        padding: 8px 30px ;
+        /*字号*/
+        font-size: 20px;
+        /*圆角边界(边框)*/
+        border-radius: 10px;
+      }
+      #btnidv{
+      	width: 300px;
+      	height: 50px;
+        margin-top: 100px;
+      	text-align: center;
+      }
+    </style>
+    <!--步骤4：编写脚本 -->
+    <script type="text/javascript">
+      //方法   function  方法名([参数列表]){  //方法体
+        function clk1(){
+          //alert("祝我大哥");
+          console.log("祝我大哥");
+          //1:声明变量
+          var msg="3.8妇女节快乐(*^▽^*)。"
+          var msgboard=document.getElementById("msgboard");
+          msgboard.innerHTML=msg;
+        }
+    </script>
+  </head>
+  <body>
+    <!--步骤1：添加表单元素
+      步骤2：与按钮交互，事件处理：点击事件noclick
+      步骤3：调用函数：clk1()
+      
+    -->
+    <div id="btnidv">
+      
+        <button class="btn" onclick="clk1()">祝我大哥</button>
+    </div>
+    <!--步骤6：添加div-->
+    <div id="msgboard">
+      
+      
+    </div>
+  </body>
+</html>
